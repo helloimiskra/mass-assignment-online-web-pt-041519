@@ -3,7 +3,7 @@ class Person
 # #list of possible attributes
 #
    def initialize(attributes)
-     attributes.each {|key, value| self.send (("#{key}="), value)}
+     attributes.each {|key, value| self.send(("#{key}="), value)}
    end
 #   #initialize method takes unspecified attributes object
 #   #iterates through each attribute above, and the name of key becomes the setter method,
